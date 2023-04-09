@@ -9,10 +9,6 @@ body {
     background-color: rgb(19, 19, 19);
 }
 
-ul li a {
-    width: 100%;
-}
-
 #header {
     position: sticky;
     width: 100%;
@@ -142,8 +138,6 @@ ul li a {
     transition: all 0.25s ease-in-out;
     border-radius: 20px 0px 0px 20px;
 }
-
-
 
 #search-box:hover #search-text,
 #search-box #search-text:valid {

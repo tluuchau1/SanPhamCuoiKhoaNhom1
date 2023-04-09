@@ -1,5 +1,5 @@
 .category {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: calc(900);
     color: white;
 }
@@ -8,10 +8,6 @@
     border: 1px solid orange;
     background: orange;
     margin: 5px 0px 10px 0px;
-}
-
-ul li {
-    list-style: none;
 }
 
 .card {
@@ -71,6 +67,7 @@ ul li {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    font-size: 16px;
 }
 
 i.card-icon-play {
