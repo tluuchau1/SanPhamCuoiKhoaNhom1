@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    align-items: center;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+#login-modal {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    box-sizing: border-box;
+    background-color: white;
+    width: 80%;
+    height: 70%;
+}
+
+#register-modal {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    box-sizing: border-box;
+    background-color: white;
+    width: 80%;
+    height: 70%;
+}
+
+.modal {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.col-left {
+    flex: 50%;
+    padding: 10px;
+}
+
+.col-right {
+    flex: 50%;
+    padding: 10px;
+}
+
+#img-modal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 20% 10%;
+}
+
+#btn {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    margin: 4px 2px;
+    border-radius: 50px;
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: grey;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.close:hover {
+    color: grey;
+}
+
+.email {
+    position: relative;
+}
+
+.email i {
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 15px;
+    color: grey;
+}
+#email {
+    margin-top: 2px;
+    width: 70%;
+    height: 45px;
+    padding-left: 65px;
+}
+
+.password {
+    position: relative;
+}
+
+.password i {
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 15px;
+    color: grey;
+}
+
+#password {
+    margin-top: 2px;
+    width: 70%;
+    height: 45px;
+    padding-left: 65px;
+}
+
+.retype-password {
+    position: relative;
+}
+
+.retype-password i {
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 15px;
+    color: grey;
+}

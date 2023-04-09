@@ -2,11 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 body {
     background-color: rgb(19, 19, 19);
+}
+
+ul li a {
+    width: 100%;
 }
 
 #header {
@@ -60,10 +64,8 @@ body {
 .main-menu li {
     position: relative;
     display: flex;
-    align-items: center;
     height: 60px;
     padding: 0px 10px;
-    text-align: center;
 }
 
 .main-menu li:hover {
@@ -85,15 +87,11 @@ body {
     background-color: black;
     padding: 0px;
     list-style: none;
-    width: 200px;
+    width: 150px;
     top: 60px;
     left: 0px;
     display: none;
     font-size: 16px;
-}
-
-.sub-menu-1 li {
-    height: 40px;
 }
 
 .main-menu li:hover > ul.sub-menu-1 {
@@ -113,7 +111,8 @@ body {
     font-size: 16px;
 }
 
-.sub-menu li {
+.sub-menu li,
+.sub-menu-1 li {
     display: flex;
     align-items: center;
     height: 40px;
@@ -137,15 +136,20 @@ body {
     border: none;
     outline: none;
     background: none;
+    height: 40px;
     font-size: 18px;
     width: 0;
     transition: all 0.25s ease-in-out;
+    border-radius: 20px 0px 0px 20px;
 }
+
+
 
 #search-box:hover #search-text,
 #search-box #search-text:valid {
     width: 300px;
     padding-left: 15px;
+    border: 2px solid orange;
 }
 
 #search-box #search-btn {
@@ -171,7 +175,6 @@ body {
 
 .avata a:hover {
     color: orange;
-    background-color: blue;
 }
 
 #search-box:hover ~ a.logo {

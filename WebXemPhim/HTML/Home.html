@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../CSS/Card.css" />
         <link rel="stylesheet" href="../LoadingAnimetion/Loading.css" />
         <link rel="stylesheet" href="../CSS/Home.css" />
+        <link rel="stylesheet" href="../CSS/slide.css" />
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script>
             $(function () {
@@ -29,6 +30,7 @@
     </head>
 
     <body>
+        <script src="../JS/Slide.js"></script>
         <div class="ld-container spinner-wrapper">
             <div class="ld-loader">
                 <div class="ld-loader--text"></div>
@@ -38,88 +40,11 @@
         <div id="header"></div>
 
         <main>
-            <!-- <div class="slider">
-                <span class="category-name">PHIM HOT</span>
-                <hr class="hr" />
-                <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active c-item">
-                            <ul class="home-row-card-1">
-                                <li class="card">
-                                    <p class="card-label">HD | Vietsub</p>
-                                    <a href="" title="Anh em Supper Mario">
-                                        <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                                        <p class="card-title">Anh em Supper Mario</p>
-                                        <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                    </a>
-                                </li>
-                                <li class="card">
-                                    <p class="card-label">HD | Vietsub</p>
-                                    <a href="" title="Anh em Supper Mario">
-                                        <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                                        <p class="card-title">Anh em Supper Mario</p>
-                                        <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                    </a>
-                                </li>
-                                <li class="card">
-                                    <p class="card-label">HD | Vietsub</p>
-                                    <a href="" title="Anh em Supper Mario">
-                                        <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                                        <p class="card-title">Anh em Supper Mario</p>
-                                        <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                    </a>
-                                </li>
-                                <li class="card">
-                                    <p class="card-label">HD | Vietsub</p>
-                                    <a href="" title="Anh em Supper Mario">
-                                        <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                                        <p class="card-title">Anh em Supper Mario</p>
-                                        <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                    </a>
-                                </li>
-                                <li class="card">
-                                    <p class="card-label">HD | Vietsub</p>
-                                    <a href="" title="Anh em Supper Mario">
-                                        <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                                        <p class="card-title">Anh em Supper Mario</p>
-                                        <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                    </a>
-                                </li>
-                                
-                                
-                            </ul>
-                        </div>
-                        <div class="carousel-item c-item">
-                            <a href=""><img src="../Image/Movie-Item/Avatar 2.jpg" class="d-block w-100 c-img" alt="..." /></a>
-                        </div>
-                        <div class="carousel-item c-item">
-                            <a href=""><img src="../Image/Movie-Item/shazam-2-con-thinh-no-cua-cac-vi-than.jpg" class="d-block w-100 c-img" alt="..." /></a>
-                        </div>
-                        <div class="carousel-item c-item">
-                            <a href=""><img src="../Image/Movie-Item/anh-em-super-mario.png" class="d-block w-100 c-img" alt="..." /></a>
-                        </div>
-                        <div class="carousel-item c-item">
-                            <a href=""><img src="../Image/Movie-Item/antman.jpg" class="d-block w-100 c-img" alt="..." /></a>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-                <div></div>
-            </div> -->
-
             <div class="home-phim">
                 <div class="home-title">
-                    <p class="category">PHIM CHIEU RAP</p>
-                    <a class="home-more" href="">
-                        Xem tat ca
+                    <p class="category">PHIM LẺ MỚI CẬP NHẬT</p>
+                    <a class="home-more" href="./PhimLe.html">
+                        Xem Tất Cả
                         <i class="fa-solid fa-angles-right"></i>
                     </a>
                 </div>
@@ -238,9 +163,9 @@
 
             <div class="home-phim">
                 <div class="home-title">
-                    <p class="category">PHIM CHIEU RAP</p>
-                    <a class="home-more" href="">
-                        Xem tat ca
+                    <p class="category">PHIM BỘ MỚI CẬP NHẬT</p>
+                    <a class="home-more" href="./PhimBo.html">
+                        Xem Tất Cả
                         <i class="fa-solid fa-angles-right"></i>
                     </a>
                 </div>
@@ -359,9 +284,9 @@
 
             <div class="home-phim">
                 <div class="home-title">
-                    <p class="category">PHIM CHIEU RAP</p>
-                    <a class="home-more" href="">
-                        Xem tat ca
+                    <p class="category">PHIM CHIẾU RẠP</p>
+                    <a class="home-more" href="./PhimChieuRap.html">
+                        Xem Tất Cả
                         <i class="fa-solid fa-angles-right"></i>
                     </a>
                 </div>
@@ -480,9 +405,9 @@
 
             <div class="home-phim">
                 <div class="home-title">
-                    <p class="category">PHIM CHIEU RAP</p>
-                    <a class="home-more" href="">
-                        Xem tat ca
+                    <p class="category">PHIM THỊNH HÀNH</p>
+                    <a class="home-more" href="./PhimThinhHanh.html">
+                        Xem Tất Cả
                         <i class="fa-solid fa-angles-right"></i>
                     </a>
                 </div>
@@ -554,9 +479,9 @@
 
             <div class="home-phim">
                 <div class="home-title">
-                    <p class="category">PHIM CHIEU RAP</p>
-                    <a class="home-more" href="">
-                        Xem tat ca
+                    <p class="category">PHIM SẮP CHIẾU</p>
+                    <a class="home-more" href="./PhimSapChieu.html">
+                        Xem Tất Cả
                         <i class="fa-solid fa-angles-right"></i>
                     </a>
                 </div>

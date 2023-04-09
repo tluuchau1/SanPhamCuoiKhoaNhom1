@@ -4,19 +4,37 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PHIM HOT</title>
+        <title>PHIM CHIẾU RẠP</title>
+        <link rel="stylesheet" href="../CSS/Header.css" />
+        <link rel="stylesheet" href="../CSS/Card.css" />
         <link rel="stylesheet" href="../CSS/Movies.css" />
-        <script src="https://kit.fontawesome.com/cdb547b0ce.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../LoadingAnimetion/Loading.css" />
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script>
             $(function () {
                 $("#header").load("Header.html");
                 $("#footer").load("Footer.html");
             });
+
+            $(document).ready(function () {
+                //Preloader
+                preloaderFadeOutTime = 1000;
+                function hidePreloader() {
+                    var preloader = $(".spinner-wrapper");
+                    preloader.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
+            });
         </script>
     </head>
 
     <body>
+        <div class="ld-container spinner-wrapper">
+            <div class="ld-loader">
+                <div class="ld-loader--text"></div>
+            </div>
+        </div>
+
         <div id="header"></div>
 
         <main>
@@ -35,216 +53,26 @@
 
                     <p>Phim mới được cập nhật mỗi ngày</p>
                 </div>
-                <ul class="row-card">
+                <ul class="row-card" id="card">
                     <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD-Vietsub</p>
-                        <a href="#" title="Anh em Supper Mario">
-                            <img class="card-img" src="../Image/Movie-Item/anh-em-super-mario.png" alt="" />
-                            <p class="card-title">Anh em Super Mario</p>
+                        <p class="card-label"></p>
+                        <a href="" title="">
+                            <img class="card-img" src="" alt="" />
+                            <p class="card-title"></p>
                             <i class="fa-solid fa-circle-play card-icon-play"></i>
                         </a>
                     </li>
                 </ul>
                 <div>
                     <ul class="pagination">
-                        <li><a class="current" href="#">1</a></li>
+                        <li><a class="current" href="##" style="color: orange">1</a></li>
                     </ul>
                 </div>
             </div>
         </main>
 
         <div id="footer"></div>
+        
+        <script type="module" src="../JS/PhimChieuRap.js"></script>
     </body>
 </html>

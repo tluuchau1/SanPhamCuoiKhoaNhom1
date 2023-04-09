@@ -10,7 +10,7 @@ const allMovies = [
         episode: "",
         year: 2019,
         country: "Phim Nhật Bản",
-        category: ["Phim Hành Động", "Phim Hoạt Hình", "Phim Anime", "Phim Lẻ"],
+        category: ["Phim Hành Động", "Phim Hoạt Hình", "Phim Anime"],
         director: "Kenji Kodama",
         actor: [
             "Akira Kamiya",

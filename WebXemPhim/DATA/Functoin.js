@@ -10,7 +10,7 @@ export function generateHTML(allMovies, condition) {
             <li class="card">
             <p class="card-label">${Item.nowPlaying}</p>
             <a href="${Item.link}" title="${Item.name}">
-                <img class="card-img" src="${Item.image}" alt="" />
+                <img class="card-img" src="${Item.image}" alt="${Item.name}" />
                 <p class="card-title">${Item.name}</p>
                 <i class="fa-solid fa-circle-play card-icon-play"></i>
             </a>
