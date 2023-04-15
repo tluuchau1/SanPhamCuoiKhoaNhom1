@@ -1,576 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Xem Phim Mới Miễn Phí</title>
-        <link rel="stylesheet" href="../CSS/Header.css" />
-        <link rel="stylesheet" href="../CSS/Card.css" />
-        <link rel="stylesheet" href="../LoadingAnimetion/Loading.css" />
-        <link rel="stylesheet" href="../CSS/Home.css" />
-        <link rel="stylesheet" href="../CSS/slide.css" />
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script>
-            $(function () {
-                $("#header").load("Header.html");
-                $("#footer").load("Footer.html");
-            });
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Xem Phim Mới Miễn Phí</title>
+      <link rel="stylesheet" href="../CSS/Header.css" />
+      <link rel="stylesheet" href="../CSS/Card.css" />
+      <link rel="stylesheet" href="../LoadingAnimetion/Loading.css" />
+      <link rel="stylesheet" href="../CSS/Home.css" />
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script>
+         $(function () {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+         });
 
-            $(document).ready(function () {
-                //Preloader
-                preloaderFadeOutTime = 1000;
-                function hidePreloader() {
-                    var preloader = $(".spinner-wrapper");
-                    preloader.fadeOut(preloaderFadeOutTime);
-                }
-                hidePreloader();
-            });
-        </script>
-    </head>
+         $(document).ready(function () {
+            //Preloader
+            preloaderFadeOutTime = 1000;
+            function hidePreloader() {
+               var preloader = $(".spinner-wrapper");
+               preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+         });
+      </script>
+   </head>
 
-    <body>
-        <script src="../JS/Slide.js"></script>
-        <div class="ld-container spinner-wrapper">
-            <div class="ld-loader">
-                <div class="ld-loader--text"></div>
+   <body>
+      <div class="ld-container spinner-wrapper">
+         <div class="ld-loader">
+            <div class="ld-loader--text"></div>
+         </div>
+      </div>
+
+      <div id="header"></div>
+
+      <main>
+         <div class="home-phim">
+            <div class="home-title">
+               <p class="category">PHIM LẺ MỚI CẬP NHẬT</p>
+               <a class="home-more" href="./DanhMuc.html?Phim=PhimLe">
+                  Xem Tất Cả
+                  <i class="fa-solid fa-angles-right"></i>
+               </a>
             </div>
-        </div>
-
-        <div id="header"></div>
-
-        <main>
-            <div class="home-phim">
-                <div class="home-title">
-                    <p class="category">PHIM LẺ MỚI CẬP NHẬT</p>
-                    <a class="home-more" href="./PhimLe.html">
-                        Xem Tất Cả
-                        <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                </div>
-                <hr class="hr" style="margin: 10px 0px" />
-                <ul class="home-row">
-                    <li>
-                        <ul class="home-row-1">
-                            <li class="card card-1">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title card-title-1">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <ul class="home-row-2">
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
+            <hr class="hr" style="margin: 10px 0px" />
+            <ul class="home-row">
+               <li>
+                  <ul class="home-row-1">
+                     <li class="card card-1" id="card">
+                        <p class="card-label"></p>
+                        <a href="">
+                           <img class="card-img" src="" alt="" />
+                           <p class="card-title card-title-1"></p>
+                           <i class="fa-solid fa-circle-play card-icon-play"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <ul class="home-row-2" id="card-1">
+                           <li class="card">
+                              <p class="card-label"></p>
+                              <a href="">
+                                 <img class="card-img" src="" alt="" />
+                                 <p class="card-title"></p>
+                                 <i class="fa-solid fa-circle-play card-icon-play"></i>
+                              </a>
+                           </li>
                         </ul>
-                    </li>
-                    <li>
-                        <ul class="home-row-3">
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <ul class="home-row-3" id="card-2">
+                     <li class="card">
+                        <p class="card-label"></p>
+                        <a href="">
+                           <img class="card-img" src="" alt="" />
+                           <p class="card-title"></p>
+                           <i class="fa-solid fa-circle-play card-icon-play"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+
+         <div class="home-phim">
+            <div class="home-title">
+               <p class="category">PHIM BỘ MỚI CẬP NHẬT</p>
+               <a class="home-more" href="./DanhMuc.html?Phim=PhimBo">
+                  Xem Tất Cả
+                  <i class="fa-solid fa-angles-right"></i>
+               </a>
             </div>
+            <hr class="hr" style="margin: 10px 0px" />
+            <ul class="home-row">
+               <li>
+                  <ul class="home-row-1">
+                     <li class="card card-1" id="card-3">
+                        <p class="card-label"></p>
+                        <a href="">
+                           <img class="card-img" src="" alt="" />
+                           <p class="card-title"></p>
+                           <i class="fa-solid fa-circle-play card-icon-play"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <ul class="home-row-2" id="card-4">
+                           <li class="card">
+                              <p class="card-label"></p>
+                              <a href="">
+                                 <img class="card-img" src="" alt="" />
+                                 <p class="card-title"></p>
+                                 <i class="fa-solid fa-circle-play card-icon-play"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <ul class="home-row-3" id="card-5">
+                     <li class="card">
+                        <p class="card-label"></p>
+                        <a href="">
+                           <img class="card-img" src="" alt="" />
+                           <p class="card-title"></p>
+                           <i class="fa-solid fa-circle-play card-icon-play"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
 
-            <div class="home-phim">
-                <div class="home-title">
-                    <p class="category">PHIM BỘ MỚI CẬP NHẬT</p>
-                    <a class="home-more" href="./PhimBo.html">
-                        Xem Tất Cả
-                        <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                </div>
-                <hr class="hr" style="margin: 10px 0px" />
-                <ul class="home-row">
-                    <li>
-                        <ul class="home-row-1">
-                            <li class="card card-1">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <ul class="home-row-2">
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="home-row-3">
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+         <div class="home-phim">
+            <div class="home-title">
+               <p class="category">PHIM CHIẾU RẠP</p>
+               <a class="home-more" href="./DanhMuc.html?Phim=PhimChieuRap">
+                  Xem Tất Cả
+                  <i class="fa-solid fa-angles-right"></i>
+               </a>
             </div>
-
-            <div class="home-phim">
-                <div class="home-title">
-                    <p class="category">PHIM CHIẾU RẠP</p>
-                    <a class="home-more" href="./PhimChieuRap.html">
-                        Xem Tất Cả
-                        <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                </div>
-                <hr class="hr" style="margin: 10px 0px" />
-                <ul class="home-row">
-                    <li>
-                        <ul class="home-row-1">
-                            <li class="card card-1">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <ul class="home-row-2">
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="card">
-                                        <p class="card-label">HD | Vietsub</p>
-                                        <a href="">
-                                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
+            <hr class="hr" style="margin: 10px 0px" />
+            <ul class="home-row">
+               <li>
+                  <ul class="home-row-1">
+                     <li class="card card-1" id="card-6">
+                        <p class="card-label"></p>
+                        <a href="">
+                           <img class="card-img" src="" alt="" />
+                           <p class="card-title"></p>
+                           <i class="fa-solid fa-circle-play card-icon-play"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <ul class="home-row-2" id="card-7">
+                           <li class="card">
+                              <p class="card-label"></p>
+                              <a href="">
+                                 <img class="card-img" src="" alt="" />
+                                 <p class="card-title"></p>
+                                 <i class="fa-solid fa-circle-play card-icon-play"></i>
+                              </a>
+                           </li>
                         </ul>
-                    </li>
-                    <li>
-                        <ul class="home-row-3">
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <ul class="home-row-3" id="card-8">
+                     <li class="card">
+                        <p class="card-label"></p>
+                        <a href="">
+                           <img class="card-img" src="" alt="" />
+                           <p class="card-title"></p>
+                           <i class="fa-solid fa-circle-play card-icon-play"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+
+         <div class="home-phim">
+            <div class="home-title">
+               <p class="category">PHIM SẮP CHIẾU</p>
+               <a class="home-more" href="./DanhMuc.html?Phim=PhimSapChieu">
+                  Xem Tất Cả
+                  <i class="fa-solid fa-angles-right"></i>
+               </a>
             </div>
-
-            <div class="home-phim">
-                <div class="home-title">
-                    <p class="category">PHIM THỊNH HÀNH</p>
-                    <a class="home-more" href="./PhimThinhHanh.html">
-                        Xem Tất Cả
-                        <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                </div>
-                <hr class="hr" style="margin: 10px 0px" />
-
-                <ul class="home-row-1">
-                    <li class="card card-1">
-                        <p class="card-label">HD | Vietsub</p>
-                        <a href="">
-                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <ul class="home-row-2">
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                            <li class="card">
-                                <p class="card-label">HD | Vietsub</p>
-                                <a href="">
-                                    <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                                    <p class="card-title">Tay đấm huyền thoại 3</p>
-                                    <i class="fa-solid fa-circle-play card-icon-play"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="home-phim">
-                <div class="home-title">
-                    <p class="category">PHIM SẮP CHIẾU</p>
-                    <a class="home-more" href="./PhimSapChieu.html">
-                        Xem Tất Cả
-                        <i class="fa-solid fa-angles-right"></i>
-                    </a>
-                </div>
-                <hr class="hr" />
-                <ul class="home-row-3">
-                    <li class="card">
-                        <p class="card-label">HD | Vietsub</p>
-                        <a href="">
-                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD | Vietsub</p>
-                        <a href="">
-                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD | Vietsub</p>
-                        <a href="">
-                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD | Vietsub</p>
-                        <a href="">
-                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD | Vietsub</p>
-                        <a href="">
-                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD | Vietsub</p>
-                        <a href="">
-                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD | Vietsub</p>
-                        <a href="">
-                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD | Vietsub</p>
-                        <a href="">
-                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD | Vietsub</p>
-                        <a href="">
-                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <p class="card-label">HD | Vietsub</p>
-                        <a href="">
-                            <img class="card-img" src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="" />
-                            <p class="card-title">Tay đấm huyền thoại 3</p>
-                            <i class="fa-solid fa-circle-play card-icon-play"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="footer"></div>
-        </main>
-    </body>
+            <hr class="hr" />
+            <ul class="home-row-3" id="card-11">
+               <li class="card">
+                  <p class="card-label"></p>
+                  <a href="">
+                     <img class="card-img" src="" alt="" />
+                     <p class="card-title"></p>
+                     <i class="fa-solid fa-circle-play card-icon-play"></i>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </main>
+      <div id="footer"></div>
+      <script type="module" src="../JS/Home.js"></script>
+   </body>
 </html>

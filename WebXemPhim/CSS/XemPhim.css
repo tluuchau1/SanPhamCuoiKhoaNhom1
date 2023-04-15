@@ -1,0 +1,83 @@
+.watch-movie {
+   width: 80%;
+   background-color: black;
+}
+
+.watch-title {
+   display: flex;
+   align-items: center;
+   gap: 0.5vw;
+   background-color: grey;
+   font-size: 1.8vw;
+   padding: 0.5vw;
+   color: white;
+}
+
+.watch-title a {
+   color: orange;
+   display: flex;
+   align-items: center;
+   gap: 0.5vw;
+}
+
+.watch-title i {
+   font-size: 1.4vw;
+}
+
+.watch-video {
+   width: 100%;
+   aspect-ratio: 16/9;
+}
+
+.watch-note {
+   font-size: 1.2vw;
+   padding: 0.5vw;
+   margin-bottom: 0.5vw;
+   color: white;
+   border: 1px solid greenyellow;
+}
+
+.hr {
+   display: flex;
+   justify-content: center;
+}
+
+.hr>hr {
+   width: 60%;
+   border: 0.5vw solid grey;
+   border-radius: 0.5vw;
+}
+
+.watch-rate {
+   color: white;
+   font-size: 1.2vw;
+   line-height: 1.8vw;
+}
+
+.like-share span {
+   padding: 0.3vw;
+   background-color: blue;
+   border-radius: 0.5vw;
+}
+
+.hr1 {
+   margin: 1vw 0;
+   width: 100%;
+}
+
+.watch-name {
+   color: white;
+}
+
+.watch-name p {
+   color: orange;
+   font-size: 2vw;
+   margin-bottom: 0.5vw;
+}
+.watch-name span {
+   font-size: 1.2vw;
+}
+
+.watch-name span a {
+  color: orange;
+}
