@@ -33,11 +33,8 @@ const allMovies = [
       director: "Koutarou Tamura",
       actor: ["Chiemi Matsutera", "Kaya Kiyohara", "Kazuyuki Okitsu", "Lynn", "Taishi Nakagawa", "Yume Miyamoto"],
       time: " 99 Phút",
-<<<<<<< Updated upstream
-=======
       rate: "8/10",
       like: 0,
->>>>>>> Stashed changes
       review:
          "Josee to Tora to Sakana-tachi Josee, the Tiger and the Fish 2020 Full HD Vietsub Thuyết Minh Tsuneo là một sinh viên đại học nghiên cứu sinh học và yêu đại dương, thích lặn biển giải trí và làm việc trong một cửa hàng đồ lặn để thực hiện ước mơ lặn ở nước ngoài của mình. Một ngày nọ, cuộc gặp gỡ bất ngờ với Josee, một thiếu nữ tàn tật lầm lì và hay đòi hỏi sẽ đưa họ trải qua một cuộc hành trình giàu lòng trắc ẩn, đầy cảm hứng, yêu thương và tràn ngập sự hồn nhiên như trẻ thơ.",
       link1: "./GioiThieuPhim.html?Phim=josee-to-tora-to-sakana-tachi",
